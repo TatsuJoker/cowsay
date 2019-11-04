@@ -3,4 +3,5 @@ FROM ubuntu:18.04
 RUN apt-get update
 RUN apt-get install -y cowsay
 
-ENTRYPOINT ["bash"]
+ENTRYPOINT ["/usr/games/cowsay"]
+CMD ["Moo!"]
